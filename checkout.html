@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | Petal Gems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo"> 🌷 Petal<span>Gems</span></h1>
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <h2>Checkout</h2>
+    <form id="checkout-form">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="text" id="city" placeholder="City" required>
+      <button type="submit" class="btn">Confirm Order</button>
+    </form>
+  </section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Petal Gems <span>Jewellery</span></h3>
+      <p>Crafting timeless elegance since 2022. Each piece tells a story of artistry, passion, and the pursuit of perfection. Discover jewelry that celebrates your unique radiance.</p>
+
+      <div class="socials">
+        <a href="#" class="social" aria-label="instagram">📷</a>
+        <a href="#" class="social" aria-label="facebook">f</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Collections</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Karachi<br>Pakistan</p>
+      <p>0323 2156964</p>
+      <p><a href="mailto:hello@petalgemsjewellery.com">hello@petalgemsjewellery.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-rule" aria-hidden="true"></div>
+
+  <div class="footer-copy">
+    <p>© 2026 Petal Gems Jewellery. All rights reserved. Crafted with love.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
